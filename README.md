@@ -39,6 +39,4 @@ Este site foi desenvolvido em equipe como parte do Projeto Integrador (PI) do SE
 
 Sinta-se à vontade para enviar pull requests ou abrir issues para sugestões de melhorias.
 
-## 📄 Licença
 
-Este projeto está licenciado sob a [GNU General Public License v3.0](LICENSE).
