@@ -205,6 +205,12 @@
         <label for="cliente">Nome do Cliente:</label>
         <input type="text" id="cliente" name="cliente" placeholder="Digite seu nome" required>
 
+        <label for="telefone">Telefone*</label>
+        <input type="tel" id="telefone" name= "telefone" placeholder="(99)99999-9999"><br>
+
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name= "email" required><br>
+
         <label for="profissional">Selecione o Profissional:</label>
         <select id="profissional" name="profissional" required>
             <option value="">Selecione...</option>
@@ -265,6 +271,8 @@
         event.preventDefault();
 
         const cliente = document.getElementById("cliente").value;
+        const telefone = document.getElementById('telefone').value;
+        const email = document.getElementById('email').value;
         const profissional = document.getElementById("profissional").value;
         const servicosSelecionados = Array.from(document.getElementById("servico").selectedOptions).map(option => option.value);
         const data = document.getElementById("data").value;
@@ -273,7 +281,7 @@
         const resultado = document.getElementById("resultado");
 
         // Validação básica
-        if (cliente === "" || profissional === "" ||servicosSelecionados.length === 0|| data === "" || hora === "") {
+        if (cliente === "" || profissional === "" ||servicosSelecionados.length === 0|| data === "" || hora === "" || telefone === "" || email == "") {
             errorMessage.style.display = "block";
         } 
 
@@ -288,6 +296,8 @@
         errorMessage.style.display = "none";
         resultado.innerHTML = `<strong>Agendamento realizado com sucesso!</strong><br>
             Cliente: ${cliente}<br>
+            Telefone : ${telefone}<br>
+            E-mail : ${email}<br>
             Profissional : ${profissional}<br>
             Serviços: ${servicosSelecionados.map(s => s.split('|')[0]).join(', ')}<br>
             Data: ${data}<br>
