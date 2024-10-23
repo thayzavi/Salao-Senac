@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffcf5; 
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+             
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333; 
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+        
+        ul li:hover {
+            background-color: #ffc078; 
+            cursor: pointer;
+            transform: scale(1.03); 
+        }
+        
+        .service-category {
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: #ffffff; 
+        }
+        
+        .voltar a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #f86504;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .voltar a:hover {
+            background-color: #f08000; 
+        }
+
+    </style>
+    <title>Serviços de Podologia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Serviços de Podologia</h1>
+
+        <div id="servico" class="service-content active">
+            <div class="service-category">Cuidados com as Unhas</div>
+            <ul>
+                <li>Aplicação de Órtese ungueal + Podoprofilaxia Podal | R$ 135</li>
+                <li>Unha Encravada (Onicocriptose)/ Espiculaectomia (retirada de pedaço de unha + 2 Sessões de Curativos) | Unilateral R$ 150 / Bilateral R$ 250</li>
+                <li>Podoprofilaxia Podal | R$ 85</li>
+                <li>Desbaste de Calos e Calosidades Plantar + Podoprofilaxia | R$ 150</li>
+            </ul>
+
+            <div class="service-category">Tratamentos Terapêuticos</div>
+            <ul>
+                <li>Tratamento para Micose – Pacote c/ 3 sessões | R$ 130</li>
+                <li>Tratamento com Laser para Unha Infecionada – Pacote c/ 3 sessões | R$ 200</li>
+                <li>Tratamento com Ozônioterapia para Unha Infecionada – Pacote c/ 4 sessões | R$ 320</li>
+                <li>Tratamentos: Tungíase (bicho-de-pé) ou Verruga Plantar | R$ 100 (por sessão)</li>
+                <li>Curativo | R$ 50</li>
+            </ul>
+
+            <div class="voltar">
+                <a href="../index.html">Voltar para a página inicial</a>
+                <a href="../componentes/agendamento.html">Agendamento do serviço</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Raleway", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.custom-hr {
+    border: none;              
+    height: 30px;              
+    background-color: #2d6191; 
+    margin: 0;                 
+  }
+a:hover{
+    color: #ff730062;
+    transform: scale(1.05);
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: auto;
+   
+}
+.header img{
+    height: 90px;
+     display: block;
+     margin: 30px auto;
+      width: 100px;
+
+}
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+    margin: 0;
+    color: #FF8801;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Navigation */
+.nav {
+    background-color: #ffffff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.nav a {
+    color: rgb(255, 174, 0);
+    text-decoration: none;
+    margin: 0 50px;
+    font-weight: bold;
+    transition:  transform 0.5s ease;
+}
+/* Hero Section */
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d6191;
+    padding: 20px;}
+
+.inicio img {
+    max-width: 730px;
+    margin-right: 80px;
+}
+
+.inicio-content {
+    max-width: 500px;
+}
+
+.inicio-content h2 {
+    font-size: 36px;
+    color: #fc8b0b;
+    gap: 15px;
+}
+
+.inicio-content p {
+    font-size: 18px;
+    color: #fffcfc;
+}
+
+.inicio-content a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #f08000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition:  transform 0.5s ease;
+}
+
+/* Services Section */
+.services {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h3 {
+    font-size: 32px;
+    color:#fc8b0b;
+    margin-bottom: 20px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service-item {
+    width: 190px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 1s ease, transform 1s ease;
+}
+.service-item:hover {
+    background-color: #f8c475; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(250, 156, 102, 0.2); /* Adiciona uma sombra */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.service-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.service-item h4 {
+    font-size: 20px;
+    color: #f08000;
+}
+
+.service-item p {
+    color: #666;
+}
+/* localizacao */
+.localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d6191;
+    padding: 60px;
+}
+
+.localizacao img {
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.localizacao-content {
+    max-width: 500px;
+}
+
+.localizacao-content h2 {
+    font-size: 36px;
+    color: #fc8b0b;
+    margin-top: 10px;
+}
+
+.localizacao-content p {
+    font-size: 21px;
+    color: #fffafa;
+}
+
+.localizacao-content a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #f08000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition:  transform 0.5s ease;
+}
+/* feedback */
+.carousel{
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.carousel h3{
+    text-align: center;
+    color: #f08000;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  background-color: rgba(255, 165, 0, 0.8); /* Laranja transparente */
+  border-radius: 50%; /* Para deixar arredondado */
+}
+/* footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #2d6191;
+    color: white;
+}
+
+.carousel{
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
