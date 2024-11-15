@@ -95,21 +95,22 @@ a:hover{
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition:  transform 0.5s ease;
+    border-radius: 20px;
+    transition:  transform 2.5s ease;
 }
 
 /* Services Section */
 .services {
     background-color: #f4f4f4;
-    padding: 40px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 .services h3 {
     font-size: 32px;
-    color:#fc8b0b;
+    color: #ff7b00;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .service-items {
@@ -119,32 +120,27 @@ a:hover{
 }
 
 .service-item {
-    width: 190px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 1s ease, transform 1s ease;
+    padding: 29px 25px;
+    font-size: 18px;
+    background-color: rgb(255, 146, 44);
+    border:0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .2s;
 }
 .service-item:hover {
-    background-color: #f8c475; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 15px rgba(250, 156, 102, 0.2); /* Adiciona uma sombra */
+    background-color: #2d6191d0; /* Muda a cor de fundo ao passar o mouse */
     cursor: pointer;
-    transform: scale(1.1);
 }
 
 .service-item img {
-    max-width: 50px;
+    max-width: 30px;
     margin-bottom: 10px;
 }
 
-.service-item h4 {
-    font-size: 20px;
-    color: #f08000;
-}
-
 .service-item p {
-    color: #666;
+    font-size: 20px;
+    color: #ffffff;
 }
 /* localizacao */
 .localizacao {
