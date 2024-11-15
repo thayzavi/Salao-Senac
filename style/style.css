@@ -7,39 +7,46 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-.custom-hr {
-    border: none;              
-    height: 30px;              
-    background-color: #2d6191; 
-    margin: 0;                 
-  }
+
 a:hover{
-    color: #ff730062;
+    color: #061b92c4;
     transform: scale(1.05);
 }
 
 /* Header */
 .header {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
-    margin: auto;
+    background-color: #fff; /* Cor de fundo */
+    border-bottom: 4px solid #f57c00;
    
 }
 .header img{
-    height: 90px;
-     display: block;
-     margin: 30px auto;
-      width: 100px;
-
+    max-width: 100px;
+    margin-bottom: 5px;
 }
 
 .header h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; 
+    font-size: 28px; /* Tamanho do texto */
+    color: #003366; /* Cor do texto */
+    font-weight: bold;
     margin: 0;
-    color: #FF8801;
-    margin-top: 30px;
-    text-align: center;
+}
+.btn-social button{
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: rgb(173, 173, 173);
+    border:0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+    color: #f4f4f4;
+}
+.header button:hover{
+    background-color: #f08000;
 }
 
 /* Navigation */
@@ -48,7 +55,6 @@ a:hover{
     padding: 40px 0;
     display: flex;
     justify-content: center;
-   
 }
 
 
@@ -65,11 +71,13 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     background-color: #2d6191;
-    padding: 20px;}
+    padding: 33px;}
 
 .inicio img {
-    max-width: 730px;
+    max-width: 710px;
     margin-right: 80px;
+    position: relative;
+    animation: flutuar 2.5s ease-in-out infinite alternate;
 }
 
 .inicio-content {
@@ -209,4 +217,15 @@ footer {
 .carousel{
     margin-bottom: 30px;
     margin-right: 20px;
+}
+
+/* animação */
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
 }
