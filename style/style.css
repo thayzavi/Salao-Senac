@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+* {
     font-family: "Raleway", sans-serif;
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-a:hover{
+a:hover {
     color: #061b92c4;
     transform: scale(1.05);
 }
@@ -19,33 +20,39 @@ a:hover{
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #fff; /* Cor de fundo */
+    background-color: #fff;
+    /* Cor de fundo */
     border-bottom: 4px solid #f57c00;
-   
+
 }
-.header img{
+
+.header img {
     max-width: 100px;
     margin-bottom: 5px;
 }
 
 .header h1 {
-    font-size: 28px; /* Tamanho do texto */
-    color: #003366; /* Cor do texto */
+    font-size: 28px;
+    /* Tamanho do texto */
+    color: #003366;
+    /* Cor do texto */
     font-weight: bold;
     margin: 0;
 }
-.btn-social button{
+
+.btn-social button {
     padding: 10px 18px;
     font-size: 18px;
     font-weight: 300;
     background-color: rgb(173, 173, 173);
-    border:0;
+    border: 0;
     border-radius: 20px;
     cursor: pointer;
     transition: .2s;
     color: #f4f4f4;
 }
-.header button:hover{
+
+.header button:hover {
     background-color: #f08000;
 }
 
@@ -63,15 +70,17 @@ a:hover{
     text-decoration: none;
     margin: 0 50px;
     font-weight: bold;
-    transition:  transform 0.5s ease;
+    transition: transform 0.5s ease;
 }
+
 /* Hero Section */
 .inicio {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #2d6191;
-    padding: 33px;}
+    padding: 33px;
+}
 
 .inicio img {
     max-width: 710px;
@@ -104,7 +113,7 @@ a:hover{
     text-decoration: none;
     font-weight: bold;
     border-radius: 20px;
-    transition:  transform 2.5s ease;
+    transition: transform 0.5s ease;
 }
 
 /* Services Section */
@@ -131,13 +140,15 @@ a:hover{
     padding: 29px 25px;
     font-size: 18px;
     background-color: rgb(255, 146, 44);
-    border:0;
+    border: 0;
     border-radius: 25px;
     cursor: pointer;
     transition: .2s;
 }
+
 .service-item:hover {
-    background-color: #2d6191d0; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #2d6191d0;
+    /* Muda a cor de fundo ao passar o mouse */
     cursor: pointer;
 }
 
@@ -150,6 +161,7 @@ a:hover{
     font-size: 20px;
     color: #ffffff;
 }
+
 /* localizacao */
 .localizacao {
     display: flex;
@@ -188,18 +200,42 @@ a:hover{
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition:  transform 0.5s ease;
+    transition: transform 0.5s ease;
 }
+
 /* feedback */
-.carousel{
+.carousel {
     margin-bottom: 30px;
     margin-right: 20px;
 }
-.carousel h3{
+
+.carousel h3 {
     text-align: center;
     color: #f08000;
     font-size: 40px;
     margin-top: 20px;
+}
+
+.deixarfeedback {
+    display: flex; /* Torna a div um container flexível */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.deixarfeedback a{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #f08000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    align-items: center;
 }
 
 /* footer */
@@ -210,18 +246,19 @@ footer {
     color: white;
 }
 
-.carousel{
+.carousel {
     margin-bottom: 30px;
     margin-right: 20px;
 }
 
 /* animação */
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
 
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
