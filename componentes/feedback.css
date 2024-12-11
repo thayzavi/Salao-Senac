@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #2d6191;
+    background-color: #0372bd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body{
 }
 .feedback h2{
     text-align: center;
-    color: #2d6191;
+    color: #0372bd;
     margin-bottom: 20px;
 }
 .grupo{
@@ -47,3 +47,28 @@ body{
 .submit-button:hover{
     background-color: #f3b667;
 }
+
+/* Estrela */
+.avaliacao{
+    display: flex;
+   }
+  .star-icon{
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 55px;/* alterar o tamanho das estrelas */
+    position: relative;
+  }
+  .star-icon::before{
+    content: "\2605";
+  } /* formato da estrela*/
+  .star-icon.ativo ~ .star-icon::before{
+    content: "\2606";
+  }
+  .avaliacao:hover .star-icon::before{
+    content: "\2605";
+  }
+  .star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+  }
