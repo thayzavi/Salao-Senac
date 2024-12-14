@@ -13,7 +13,7 @@
             padding: 0;
         }
         .container {
-            margin: 30px 0;
+            margin: 25px;
             padding: 20px;
             background-color: #f4f4f4;
             border-radius: 8px;
@@ -31,8 +31,8 @@
             margin: 10px 0 5px;
         }
         input, select {
-            padding: 10px;
-            margin-bottom: 20px;
+            padding: 12px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
@@ -43,8 +43,8 @@
             color: white;
             border: none;
             border-radius: 5px;
-            font-weight: bold;
             cursor: pointer;
+            width: 180px;
         }
         button:hover {
             background-color: #ee8700;
@@ -61,143 +61,13 @@
             border-radius: 4px;
             display: none;
         }
-        .funcionarios {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-        
-        .funcionario {
-            background-color: #ffb56f;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 8px;
+        a{
+            text-decoration: none;
+            color: #f4f4f4;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Verificação de Disponibilidade</h1>
-        <div class="funcionarios">
-            <!-- Funcionário 1 -->
-            <div class="funcionario">
-                <h2>João Silva</h2>
-                <p><strong>Serviços Prestados:</strong></p>
-                <ul>
-                    <li>Corte de Cabelo</li>
-                    <li>Barba</li>
-                    <li>Coloração</li>
-                </ul>
-                <p><strong>Horários Disponíveis:</strong></p>
-                <table>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>08:00 - 12:00</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-feira</td>
-                        <td>14:00 - 18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados</td>
-                        <td>09:00 - 12:00</td>
-                    </tr>
-                </table>
-            </div>
-
-            <!-- Funcionário 2 -->
-            <div class="funcionario">
-                <h2>Ana Oliveira</h2>
-                <p><strong>Serviços Prestados:</strong></p>
-                <ul>
-                    <li>Coloração</li>
-                    <li>Escova</li>
-                    <li>Pedicure</li>
-                </ul>
-                <p><strong>Horários Disponíveis:</strong></p>
-                <table>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                    <tr>
-                        <td>Quarta-feira :</td>
-                        <td>09:00 - 13:00</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta-feira :</td>
-                        <td>10:00 - 16:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados :</td>
-                        <td>09:00 - 12:00</td>
-                    </tr>
-                </table>
-            </div>
-            <!-- funcionario 3 -->
-            <div class="funcionario">
-                <h2> Ricardo Santos</h2>
-                <p><strong>Serviços Prestados:</strong></p>
-                <ul>
-                    <li>Barba</li>
-                    <li>Barba Clássica </li>
-                    <li>Barba e Cabelo</li>
-                </ul>
-                <p><strong>Horários Disponíveis:</strong></p>
-                <table>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira :</td>
-                        <td>10:00 - 15:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta-feira :</td>
-                        <td>13:00 - 17:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados :</td>
-                        <td>09:00 - 12:00</td>
-                    </tr>
-                </table>
-            </div>
-            <!-- funcionario 4 -->
-            <div class="funcionario">
-                <h2>Danilo Farias</h2>
-                <p><strong>Serviços Prestados:</strong></p>
-                <ul>
-                    <li>Massagem Modeladora</li>
-                    <li>Drenagem Linfática</li>
-                    <li>Massagem Relaxante</li>
-                </ul>
-                <p><strong>Horários Disponíveis:</strong></p>
-                <table>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira :</td>
-                        <td>10:00 - 16:00</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-feira :</td>
-                        <td>10:00 - 16:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados :</td>
-                        <td>09:00 - 12:00</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
 
 <div class="container">
     
@@ -220,6 +90,7 @@
             <option value="João">João</option>
             <option value="Danilo">Danilo</option>
         </select>
+        <button><a href="disponibilidade.html">Verificar Disponibilidade</a></button>
 
         <label for="servico">Selecione o Serviço:</label>
         <select id="servico" name="servico" multiple required>
