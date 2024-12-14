@@ -25,7 +25,7 @@
         display: flex;
         width: 60%;
         background-color: white;
-        box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(5, 1, 1, 0.527);
     }
     .login-secao, .registro{
         padding: 30px;
@@ -107,13 +107,13 @@
 }
 img{
     width: 150px;
-    padding: 30px;
+    padding: 26px;
 }
 </style>
 <body>
-    <img src="senac-logo-2.png" alt="LogoSenac">
     <div class="contener">
         <div class="login-secao">
+            <img src="senac-logo-2.png" alt="LogoSenac">
             <h2>BEM-VINDO DE VOLTA! </h2>
             <form class="formulario" id="loginForm" onsubmit="return validaloginForm()">
                 <input type="text" id="email" placeholder="E-mail" required>
